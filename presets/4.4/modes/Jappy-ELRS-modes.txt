@@ -1,0 +1,62 @@
+#$ TITLE: Jappy's Modes for ELRS
+#$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: Modes
+#$ STATUS: COMMUNITY
+#$ KEYWORDS:  modes, avatar, walksnail,HD, elrs
+#$ AUTHOR: jappyjan
+
+#$ PARSER: MARKED
+
+#$ DESCRIPTION:
+#$ DESCRIPTION: Sets up modes according to my preference and ELRS best practices
+#$ DESCRIPTION:
+
+# turtle
+aux 0 35 1 1300 1700 0 0
+#$ OPTION_GROUP BEGIN: special modes
+    #$ OPTION BEGIN (UNCHECKED): has 3D mode
+        feature 3D
+        aux 0 29 1 1700 2100 0 0
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): has angle mode
+        aux 0 1 1 1700 2100 0 0
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): has launch mode
+        aux 0 49 1 1700 2100 0 0
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: LED's
+    #$ OPTION BEGIN (UNCHECKED): has BF LEDS
+        feature LED_STRIP
+        aux 0 15 3 900 1300 0 0
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): has PINIO 1 LEDS
+        aux 0 40 3 900 1300 0 0
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): has PINIO 2 LEDS
+        aux 0 41 3 900 1300 0 0
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): has PINIO 3 LEDS
+        aux 0 42 3 900 1300 0 0
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): has PINIO 4 LEDS
+        aux 0 43 3 900 1300 0 0
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+# arm switch
+aux 0 0 0 1700 2100 0 0
+
+# beeper
+beacon RX_LOST
+beacon RX_SET
+aux 2 13 3 1700 2100 0 0
