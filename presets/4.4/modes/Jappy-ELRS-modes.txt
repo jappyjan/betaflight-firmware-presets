@@ -13,42 +13,50 @@
 #$ DESCRIPTION: Sets up modes according to my preference and ELRS best practices
 #$ DESCRIPTION:
 
-# turtle
+# turtle mode
 aux 0 35 1 1300 1700 0 0
 #$ OPTION_GROUP BEGIN: special modes
     #$ OPTION BEGIN (UNCHECKED): has 3D mode
+        # 3D mode
         feature 3D
         aux 0 29 1 1700 2100 0 0
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): has angle mode
+        # angle mode
         aux 0 1 1 1700 2100 0 0
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): has launch mode
+        # launch mode
         aux 0 49 1 1700 2100 0 0
     #$ OPTION END
 #$ OPTION_GROUP END
 
 #$ OPTION_GROUP BEGIN: LED's
     #$ OPTION BEGIN (UNCHECKED): has BF LEDS
+        # bf leds
         feature LED_STRIP
         aux 0 15 3 900 1300 0 0
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): has PINIO 1 LEDS
+        # pinio 1 led
         aux 0 40 3 900 1300 0 0
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): has PINIO 2 LEDS
+        # pinio 2 led
         aux 0 41 3 900 1300 0 0
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): has PINIO 3 LEDS
+        # pinio 3 led
         aux 0 42 3 900 1300 0 0
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): has PINIO 4 LEDS
+        # pinio 4 led
         aux 0 43 3 900 1300 0 0
     #$ OPTION END
 #$ OPTION_GROUP END
