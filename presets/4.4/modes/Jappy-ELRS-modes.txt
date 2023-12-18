@@ -19,7 +19,7 @@ aux 0 0 0 1700 2100 0 0
 # special modes on AUX 2
 # turtle mode
 aux 0 35 1 1300 1700 0 0
-#$ OPTION_GROUP BEGIN: special modes
+#$ OPTION_GROUP BEGIN: special modes (choose one)
     #$ OPTION BEGIN (UNCHECKED): has 3D mode
         # 3D mode
         feature 3D
@@ -38,7 +38,7 @@ aux 0 35 1 1300 1700 0 0
 #$ OPTION_GROUP END
 
 #leds on AUX 3
-#$ OPTION_GROUP BEGIN: LED's
+#$ OPTION_GROUP BEGIN: LED's (choose one)
     #$ OPTION BEGIN (UNCHECKED): has BF LEDS
         # bf leds
         feature LED_STRIP
