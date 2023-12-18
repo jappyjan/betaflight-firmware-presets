@@ -41,22 +41,22 @@ aux 0 0 0 1700 2100 0 0
 
 # special modes on AUX 2
 # turtle mode
-aux 0 35 1 1300 1700 0 0
+aux 1 35 1 1300 1700 0 0
 #$ OPTION_GROUP BEGIN: special modes (choose one)
     #$ OPTION BEGIN (UNCHECKED): has 3D mode
         # 3D mode
         feature 3D
-        aux 0 29 1 1700 2100 0 0
+        aux 2 29 1 1700 2100 0 0
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): has angle mode
         # angle mode
-        aux 0 1 1 1700 2100 0 0
+        aux 2 1 1 1700 2100 0 0
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): has launch mode
         # launch mode
-        aux 0 49 1 1700 2100 0 0
+        aux 2 49 1 1700 2100 0 0
     #$ OPTION END
 #$ OPTION_GROUP END
 
@@ -65,36 +65,36 @@ aux 0 35 1 1300 1700 0 0
     #$ OPTION BEGIN (UNCHECKED): has BF LEDS
         # bf leds
         feature LED_STRIP
-        aux 0 15 3 900 1300 0 0
+        aux 3 15 3 900 1300 0 0
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): has PINIO 1 LEDS
         # pinio 1 led
-        aux 0 40 3 900 1300 0 0
+        aux 3 40 3 900 1300 0 0
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): has PINIO 2 LEDS
         # pinio 2 led
-        aux 0 41 3 900 1300 0 0
+        aux 3 41 3 900 1300 0 0
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): has PINIO 3 LEDS
         # pinio 3 led
-        aux 0 42 3 900 1300 0 0
+        aux 3 42 3 900 1300 0 0
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): has PINIO 4 LEDS
         # pinio 4 led
-        aux 0 43 3 900 1300 0 0
+        aux 3 43 3 900 1300 0 0
     #$ OPTION END
 #$ OPTION_GROUP END
 
 # beeper on AUX 4 (50%)
 beacon RX_LOST
 beacon RX_SET
-#aux 2 13 3 1300 1700 0 0
+#aux 4 13 3 1300 1700 0 0
 
 # RTH on AUX 4 (100%)
 #$ OPTION BEGIN (UNCHECKED): has RTH
-    aux 0 46 3 1700 2100 0 0
+    aux 5 46 3 1700 2100 0 0
 #$ OPTION END
