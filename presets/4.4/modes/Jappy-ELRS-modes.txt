@@ -41,7 +41,7 @@ aux 0 0 0 1700 2100 0 0
 
 # special modes on AUX 2
 # turtle mode
-aux 0 35 1 1300 1700 0 0
+#aux 0 35 1 1300 1700 0 0
 #$ OPTION_GROUP BEGIN: special modes (choose one)
     #$ OPTION BEGIN (UNCHECKED): has 3D mode
         # 3D mode
@@ -92,7 +92,7 @@ aux 0 35 1 1300 1700 0 0
 # beeper on AUX 4 (50%)
 beacon RX_LOST
 beacon RX_SET
-aux 2 13 3 1300 1700 0 0
+#aux 2 13 3 1300 1700 0 0
 
 # RTH on AUX 4 (100%)
 #$ OPTION BEGIN (UNCHECKED): has RTH
