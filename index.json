@@ -3886,27 +3886,6 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.4/modes/Jappy-ELRS-modes.txt",
-      "hash": "fef6063e1eb662a1c966465e799cd6f4d7de56c01cb55cdca420a06da2429c0e",
-      "title": "Jappy's Modes for ELRS",
-      "firmware_version": [
-        "4.3",
-        "4.4",
-        "4.5"
-      ],
-      "category": "MODES",
-      "status": "COMMUNITY",
-      "keywords": [
-        "modes",
-        "avatar",
-        "walksnail",
-        "HD",
-        "elrs"
-      ],
-      "author": "jappyjan",
-      "priority": 0
-    },
-    {
       "fullPath": "presets/4.4/osd/QuadMcFly_DJI_HD_OSD.txt",
       "hash": "1bdc587fd4223c8526a7954c0b44e7bfc98a8b9d556de729d24376d06e29f3be",
       "title": "QuadMcFly - DJI HD OSD",
@@ -6204,6 +6183,27 @@
       "author": "sugarK",
       "force_options_review": true,
       "priority": 1000000
+    },
+    {
+      "fullPath": "presets/Jappy-Setup.txt",
+      "hash": "ba89902a975e5901ed6e524550fa425780b24e99a8078893d8a919b488d006bd",
+      "title": "Jappy's Drone Setup",
+      "firmware_version": [
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "category": "MODES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "modes",
+        "avatar",
+        "walksnail",
+        "HD",
+        "elrs"
+      ],
+      "author": "jappyjan",
+      "priority": 0
     }
   ]
 }
