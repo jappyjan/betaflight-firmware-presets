@@ -13,6 +13,57 @@
 #$ DESCRIPTION: Sets up modes according to my preference and ELRS best practices
 #$ DESCRIPTION:
 
+# Basics
+feature TELEMETRY
+feature AIRMO
+set small_angle = 180
+set stats_min_armed_time_s = -1
+set stats_total_flights = 0
+set stats_total_time_s = 0
+set stats_total_dist_m = 0
+set craft_name = -
+set pilot_name = -
+
+# Beeper
+beeper -GYRO_CALIBRATED
+beeper RX_LOST
+beeper RX_LOST_LANDING
+beeper -DISARMING
+beeper -ARMING
+beeper -ARMING_GPS_FIX
+beeper ARMING_GPS_NO_FIX
+beeper BAT_CRIT_LOW
+beeper BAT_LOW
+beeper -GPS_STATUS
+beeper RX_SET
+beeper -ACC_CALIBRATION
+beeper ACC_CALIBRATION_FAIL
+beeper -READY_BEEP
+beeper MULTI_BEEPS
+beeper -DISARM_REPEAT
+beeper -ARMED
+beeper -SYSTEM_INIT
+beeper -ON_USB
+beeper -BLACKBOX_ERASE
+beeper -CRASH_FLIP
+beeper -CAM_CONNECTION_OPEN
+beeper -CAM_CONNECTION_CLOSE
+beeper RC_SMOOTHING_INIT_FAIL
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# map
+map AETR1234
+
+# Blackbox
+set blackbox_sample_rate = 1/2
+set blackbox_disable_bat = ON
+set blackbox_disable_rssi = ON
+set blackbox_disable_gps = ON
+set debug_mode = GYRO_SCALED
+
 #$ OPTION BEGIN (UNCHECKED): ! CLEAR ALL MODES !
     aux 0 0 0 900 900 0 0
     aux 1 0 0 900 900 0 0
@@ -98,3 +149,61 @@ aux 4 13 3 1300 1700 0 0
 #$ OPTION BEGIN (UNCHECKED): has RTH
     aux 5 46 3 1700 2100 0 0
 #$ OPTION END
+
+# HV Lipos
+#$ OPTION BEGIN (CHECKED): uses HV Lipos
+    set vbat_max_cell_voltage = 440
+    set vbat_full_cell_voltage = 410
+    set vbat_min_cell_voltage = 330
+    set vbat_warning_cell_voltage = 360
+#$ OPTION END
+
+# OSD
+#$ OPTION BEGIN (CHECKED): Configure Basic OSD
+    feature OSD
+    set osd_profile = 1
+
+    set osd_units = METRIC
+    set osd_warn_bitmask = 286719
+    set osd_link_quality_alarm = 65
+    set osd_core_temp_alarm = 80
+    set osd_tim1 = 2560
+    set osd_vbat_pos = 341
+    set osd_link_quality_pos = 3563
+    set osd_tim_1_pos = 3179
+    set osd_flymode_pos = 2307
+    set osd_warnings_pos = 14772
+    set osd_avg_cell_voltage_pos = 2531
+    set osd_disarmed_pos = 2294
+    set osd_flip_arrow_pos = 2330
+    set osd_menu_background = TRANSPARENT
+    set osd_canvas_width = 53
+    set osd_canvas_height = 20
+    set osd_craftname_msgs = OFF
+#$ OPTION END
+
+
+# OSD Options
+#$ OPTION_GROUP BEGIN: OSD Elements (choose many)
+    # VTX Channel
+    #$ OPTION BEGIN (UNCHECKED): VTX Channel
+        set osd_vtx_channel_pos = 3528
+    #$ OPTION END
+
+    # GPS Stuff
+    #$ OPTION BEGIN (UNCHECKED): GPS Stuff
+        set osd_gps_speed_pos = 2248
+        set osd_gps_lon_pos = 2179
+        set osd_gps_lat_pos = 2211
+        set osd_gps_sats_pos = 2243
+        set osd_home_dir_pos = 2170
+        set osd_home_dist_pos = 2136
+        set osd_flight_dist_pos = 2156
+        set osd_altitude_pos = 2147
+    #$ OPTION END
+
+    # Craft name
+    #$ OPTION BEGIN (UNCHECKED): Craft name
+        set osd_craft_name_pos = 2549
+    #$ OPTION END
+#$ OPTION_GROUP END
