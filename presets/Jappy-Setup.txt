@@ -112,7 +112,7 @@ aux 1 35 1 1300 1700 0 0
 #$ OPTION_GROUP END
 
 #leds on AUX 3
-#$ OPTION_GROUP BEGIN: LED's (choose one)
+#$ OPTION_GROUP BEGIN: LED's (choose many)
     #$ OPTION BEGIN (UNCHECKED): has BF LEDS
         # bf leds
         feature LED_STRIP
@@ -126,48 +126,48 @@ aux 1 35 1 1300 1700 0 0
 
     #$ OPTION BEGIN (UNCHECKED): has PINIO 1 LEDS (LOW ON)
         # pinio 1 led
-        aux 3 40 2 900 1300 0 0
+        aux 4 40 2 900 1300 0 0
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): has PINIO 2 LEDS (HIGH ON)
         # pinio 2 led
-        aux 3 41 2 1700 2100 0 0    
+        aux 5 41 2 1700 2100 0 0    
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): has PINIO 2 LEDS (LOW ON)
         # pinio 2 led
-        aux 3 41 2 900 1300 0 0
+        aux 5 41 2 900 1300 0 0
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): has PINIO 3 LEDS (HIGHT ON)
         # pinio 3 led
-        aux 3 42 2 1700 2100 0 0
+        aux 6 42 2 1700 2100 0 0
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): has PINIO 3 LEDS (LOW ON)
         # pinio 3 led
-        aux 3 42 2 900 1300 0 0
+        aux 6 42 2 900 1300 0 0
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): has PINIO 4 LEDS (HIGH ON)
         # pinio 4 led
-        aux 3 43 2 1700 2100 0 0
+        aux 7 43 2 1700 2100 0 0
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): has PINIO 4 LEDS (LOW ON)
         # pinio 4 led
-        aux 3 43 2 900 1300 0 0
+        aux 7 43 2 900 1300 0 0
     #$ OPTION END
 #$ OPTION_GROUP END
 
 # beeper on AUX 4 (50%)
 beacon RX_LOST
 beacon RX_SET
-aux 4 13 3 1300 1700 0 0
+aux 8 13 3 1300 1700 0 0
 
 # RTH on AUX 4 (100%)
 #$ OPTION BEGIN (UNCHECKED): has RTH
-    aux 5 46 3 1700 2100 0 0
+    aux 9 46 3 1700 2100 0 0
 #$ OPTION END
 
 # HV Lipos
