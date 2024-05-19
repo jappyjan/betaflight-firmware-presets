@@ -119,22 +119,42 @@ aux 1 35 1 1300 1700 0 0
         aux 3 15 2 900 1300 0 0
     #$ OPTION END
 
-    #$ OPTION BEGIN (UNCHECKED): has PINIO 1 LEDS
+    #$ OPTION BEGIN (UNCHECKED): has PINIO 1 LEDS (HIGH ON)
+        # pinio 1 led
+        aux 4 40 2 1700 2100 0 0
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): has PINIO 1 LEDS (LOW ON)
         # pinio 1 led
         aux 3 40 2 900 1300 0 0
     #$ OPTION END
 
-    #$ OPTION BEGIN (UNCHECKED): has PINIO 2 LEDS
+    #$ OPTION BEGIN (UNCHECKED): has PINIO 2 LEDS (HIGH ON)
+        # pinio 2 led
+        aux 3 41 2 1700 2100 0 0    
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): has PINIO 2 LEDS (LOW ON)
         # pinio 2 led
         aux 3 41 2 900 1300 0 0
     #$ OPTION END
 
-    #$ OPTION BEGIN (UNCHECKED): has PINIO 3 LEDS
+    #$ OPTION BEGIN (UNCHECKED): has PINIO 3 LEDS (HIGHT ON)
+        # pinio 3 led
+        aux 3 42 2 1700 2100 0 0
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): has PINIO 3 LEDS (LOW ON)
         # pinio 3 led
         aux 3 42 2 900 1300 0 0
     #$ OPTION END
 
-    #$ OPTION BEGIN (UNCHECKED): has PINIO 4 LEDS
+    #$ OPTION BEGIN (UNCHECKED): has PINIO 4 LEDS (HIGH ON)
+        # pinio 4 led
+        aux 3 43 2 1700 2100 0 0
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): has PINIO 4 LEDS (LOW ON)
         # pinio 4 led
         aux 3 43 2 900 1300 0 0
     #$ OPTION END
