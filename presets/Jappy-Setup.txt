@@ -170,8 +170,8 @@ aux 4 13 3 1300 1700 0 0
     set osd_tim1 = 2560
     set osd_vbat_pos = 341
     set osd_link_quality_pos = 3563
-    set osd_tim_1_pos = 3179
-    set osd_flymode_pos = 2307
+    set osd_tim_1_pos = 3211
+    set osd_flymode_pos = 3245
     set osd_warnings_pos = 14772
     set osd_avg_cell_voltage_pos = 2531
     set osd_disarmed_pos = 2294
