@@ -64,10 +64,16 @@ set blackbox_disable_rssi = ON
 set blackbox_disable_gps = ON
 set debug_mode = GYRO_SCALED
 
-#$ OPTION BEGIN (UNCHECKED): ELRS 250Hz (V2)
-    #$ INCLUDE: presets/4.3/rc_link/elrs_250hz.txt
-#$ OPTION END
+#$ OPTION_GROUP BEGIN: RX Link (choose one)
+    #$ OPTION BEGIN (CHECKED): ELRS 250Hz
+        #$ INCLUDE: presets/4.3/rc_link/elrs_250hz.txt
+    #$ OPTION END
 
+
+    #$ OPTION BEGIN (UNCHECKED): ELRS 150Hz
+        #$ INCLUDE: presets/4.3/rc_link/elrs_150hz.txt
+    #$ OPTION END
+#$ OPTION_GROUP END
 
 #$ OPTION BEGIN (UNCHECKED): ! CLEAR ALL MODES !
     aux 0 0 0 900 900 0 0
