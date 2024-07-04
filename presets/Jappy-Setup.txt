@@ -22,7 +22,7 @@ set stats_total_flights = 0
 set stats_total_time_s = 0
 set stats_total_dist_m = 0
 set craft_name = -
-set pilot_name = -
+set pilot_name = UAV Painkillers
 
 # Beeper
 beeper -GYRO_CALIBRATED
@@ -75,7 +75,7 @@ set debug_mode = GYRO_SCALED
     #$ OPTION END
 #$ OPTION_GROUP END
 
-#$ OPTION BEGIN (UNCHECKED): ! CLEAR ALL MODES !
+#$ OPTION BEGIN (CHECKED): ! CLEAR ALL MODES !
     aux 0 0 0 900 900 0 0
     aux 1 0 0 900 900 0 0
     aux 2 0 0 900 900 0 0
@@ -111,7 +111,7 @@ aux 1 35 1 1300 1700 0 0
         aux 2 29 1 1700 2100 0 0
     #$ OPTION END
 
-    #$ OPTION BEGIN (UNCHECKED): has angle mode
+    #$ OPTION BEGIN (CHECKED): has angle mode
         # angle mode
         aux 2 1 1 1700 2100 0 0
     #$ OPTION END
