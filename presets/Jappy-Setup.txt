@@ -13,6 +13,8 @@
 #$ DESCRIPTION: Sets up modes according to my preference and ELRS best practices
 #$ DESCRIPTION:
 
+#$ INCLUDE: presets/4.3/rc_link/elrs_250hz.txt
+
 # Basics
 feature TELEMETRY
 feature AIRMO
