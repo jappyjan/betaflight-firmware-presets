@@ -13,10 +13,6 @@
 #$ DESCRIPTION: Sets up modes according to my preference and ELRS best practices
 #$ DESCRIPTION:
 
-#$ OPTION BEGIN (UNCHECKED): ELRS 250Hz
-    feature TELEMETRY
-#$ OPTION END
-
 # Basics
 feature TELEMETRY
 feature AIRMO
@@ -67,6 +63,10 @@ set blackbox_disable_bat = ON
 set blackbox_disable_rssi = ON
 set blackbox_disable_gps = ON
 set debug_mode = GYRO_SCALED
+
+#$ OPTION BEGIN (UNCHECKED): ELRS 250Hz
+    feature TELEMETRY
+#$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): ! CLEAR ALL MODES !
     aux 0 0 0 900 900 0 0
