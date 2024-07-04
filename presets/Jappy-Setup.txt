@@ -14,7 +14,7 @@
 #$ DESCRIPTION:
 
 #$ OPTION BEGIN (UNCHECKED): ELRS 250Hz
-    #$ INCLUDE: presets/4.3/rc_link/elrs_250hz.txt
+    feature TELEMETRY
 #$ OPTION END
 
 # Basics
