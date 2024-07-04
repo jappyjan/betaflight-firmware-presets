@@ -68,7 +68,7 @@ set debug_mode = GYRO_SCALED
     feature TELEMETRY
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): ! CLEAR ALL MODES !
+#$ OPTION BEGIN (UNCHECKED): ! CLEAR MY ALL MODES !
     aux 0 0 0 900 900 0 0
     aux 1 0 0 900 900 0 0
     aux 2 0 0 900 900 0 0
